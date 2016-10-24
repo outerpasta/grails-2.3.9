@@ -15,5 +15,7 @@ RUN wget https://github.com/grails/grails-core/releases/download/v$GRAILS_VERSIO
 ENV GRAILS_HOME /usr/lib/jvm/grails
 ENV PATH $GRAILS_HOME/bin:$PATH
 
+RUN grails help
+
 RUN mkdir /app
 WORKDIR /app
